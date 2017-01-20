@@ -17,6 +17,11 @@ Operators.push(new _operator2.default('equal', function (a, b) {
 Operators.push(new _operator2.default('notEqual', function (a, b) {
   return a !== b;
 }));
+
+Operators.push(new _operator2.default('exists', function (a, b) {
+  return b === (a !== undefined);
+}));
+
 Operators.push(new _operator2.default('in', function (a, b) {
   return b.indexOf(a) > -1;
 }));

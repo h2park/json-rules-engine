@@ -28,7 +28,6 @@ var Fact = function () {
   function Fact(id, valueOrMethod, options) {
     _classCallCheck(this, Fact);
 
-    console.log("I'm A BRAND NEW FACT AND I'M HAPPY");
     this.id = id;
     var defaultOptions = { cache: true };
     if (typeof options === 'undefined') {
