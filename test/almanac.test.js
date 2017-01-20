@@ -50,8 +50,8 @@ describe('Almanac', () => {
       return expect(almanac.factValue('foo', { userId: 1 })).to.eventually.equal(1)
     })
 
-    it('throws an exception if it encounters an undefined fact', () => {
-      expect(almanac.factValue('foo')).to.be.rejectedWith(/Undefined fact: foo/)
+    it('returns undefined if it encounters an undefined fact', async () => {
+      expect(almanac.factValue('foo')).to.eventually.equal(undefined)
     })
   })
 
@@ -83,7 +83,7 @@ describe('Almanac', () => {
 
     it('raises an exception if fact DNE', () => {
       almanac = new Almanac(new Map())
-      expect(almanac._getFact.bind(almanac, 'unknown')).to.throw(/Undefined fact/)
+      expect(almanac._getFact('unknown').value).to.equal(undefined)
     })
   })
 

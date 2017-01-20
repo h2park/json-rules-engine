@@ -60,7 +60,7 @@ var Almanac = function () {
     value: function _getFact(factId) {
       var fact = this.factMap.get(factId);
       if (fact === undefined) {
-        throw new Error('Undefined fact: ' + factId);
+        return new _fact2.default(factId, undefined);
       }
       return fact;
     }

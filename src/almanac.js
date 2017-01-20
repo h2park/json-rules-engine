@@ -36,7 +36,7 @@ export default class Almanac {
   _getFact (factId) {
     let fact = this.factMap.get(factId)
     if (fact === undefined) {
-      throw new Error(`Undefined fact: ${factId}`)
+      return new Fact(factId, undefined)
     }
     return fact
   }

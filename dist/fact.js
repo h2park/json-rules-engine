@@ -28,6 +28,7 @@ var Fact = function () {
   function Fact(id, valueOrMethod, options) {
     _classCallCheck(this, Fact);
 
+    console.log("I'm A BRAND NEW FACT AND I'M HAPPY");
     this.id = id;
     var defaultOptions = { cache: true };
     if (typeof options === 'undefined') {
@@ -40,9 +41,6 @@ var Fact = function () {
     }
 
     if (!this.id) throw new Error('factId required');
-    if (typeof this.value === 'undefined' && typeof this.calculationMethod === 'undefined') {
-      throw new Error('facts must have a value or method');
-    }
 
     this.priority = parseInt(options.priority || 1, 10);
     this.options = Object.assign({}, defaultOptions, options);

@@ -1,6 +1,6 @@
 {
-  "name": "json-rules-engine",
-  "version": "1.3.1",
+  "name": "@octoblu/json-rules-engine",
+  "version": "1.3.2",
   "description": "Rules Engine expressed in simple json",
   "main": "dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cachecontrol/json-rules-engine"
+    "url": "https://github.com/octoblu/json-rules-engine"
   },
   "keywords": [
     "rules",
@@ -34,12 +34,12 @@
       "factories"
     ]
   },
-  "author": "Cache Hamm <cdhamm@gmail.com>",
+  "author": "Octoblu, Inc <serveradmin@octoblu.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cachecontrol/json-rules-engine/issues"
+    "url": "https://github.com/octoblu/json-rules-engine/issues"
   },
-  "homepage": "https://github.com/cachecontrol/json-rules-engine",
+  "homepage": "https://github.com/octoblu/json-rules-engine",
   "devDependencies": {
     "babel-cli": "^6.4.5",
     "babel-core": "~6.9.1",
